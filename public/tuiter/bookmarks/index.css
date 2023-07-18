@@ -54,6 +54,7 @@
   object-fit: cover;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
+  border-bottom: 1px solid lightgrey;
 }
 .wd-tuit-link-details {
   padding: 12px;
