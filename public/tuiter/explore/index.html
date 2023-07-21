@@ -27,33 +27,33 @@
   </head>
   <body>
     <div id="wd-page-container" class="container-fluid row">
-      <div id="wd-nav-sidebar" class="col-2">
+      <div id="wd-nav-sidebar" class="col-2 p-2">
         <div class="list-group">
           <a class="list-group-item list-group-item-action" href="../home.html"
             ><i class="fa-brands fa-twitter"></i
           ></a>
           <a class="list-group-item list-group-item-action" href="../home.html"
-            ><i class="fa-solid fa-house"></i> Home</a
+            ><i class="fa-solid fa-house p-1"></i> Home</a
           >
           <a class="list-group-item list-group-item-action active" href="../explore"
-            ><i class="fa-solid fa-hashtag"></i>Explore</a
+            ><i class="fa-solid fa-hashtag p-1"></i>Explore</a
           >
           <a class="list-group-item list-group-item-action" href="../notifications.html"
-            ><i class="fa-solid fa-bell"></i>Notifications</a
+            ><i class="fa-solid fa-bell p-1"></i>Notifications</a
           >
           <a class="list-group-item list-group-item-action" href="../messages.html"
-            ><i class="fa-solid fa-envelope"></i>Messages</a
+            ><i class="fa-solid fa-envelope p-1"></i>Messages</a
           >
           <a class="list-group-item list-group-item-action" href="../bookmarks.html"
-            ><i class="fa-solid fa-bookmark"></i>Bookmarks</a
+            ><i class="fa-solid fa-bookmark p-1"></i>Bookmarks</a
           >
           <a class="list-group-item list-group-item-action" href="../lists.html"
-            ><i class="fa-solid fa-list"></i>Lists</a
+            ><i class="fa-solid fa-list p-1"></i>Lists</a
           >
           <a class="list-group-item list-group-item-action" href="../profile.html"
-            ><i class="fa-solid fa-user"></i>Profile</a
+            ><i class="fa-solid fa-user p-1"></i>Profile</a
           >
-          <a class="list-group-item list-group-item-action" href="../navigation.html">
+          <a class="list-group-item list-group-item-action p-1" href="../navigation.html">
             <span class="fa-stack fa-1x">
               <i class="fa-solid fa-circle fa-stack-1x"></i>
               <i class="fa-solid fa-ellipsis fa-stack-1x fa-inverse"></i>
@@ -64,10 +64,12 @@
         <button class="btn btn-primary w-100 mt-2 rounded-pill">Tuit</button>
       </div>
       <div id="wd-main-content" class="col-6">
-        <div id="wd-search-header" class="input-group">
-          <span class="input-group-text">glass</span>
-          <input type="text" class="form-control" />
-          <span class="">gear</span>
+        <div id="wd-search-header" class="input-group align-items-center m-2">
+          <div class="border rounded-pill flex-fill">
+            <i class="fa-solid fa-magnifying-glass p-2"></i>
+            <input type="text" class="flex-fill border-0" placeholder="Search Tuiter" />
+          </div>
+          <i class="fa-solid fa-gear p-2"></i>
         </div>
         <ul id="wd-nav-header" class="nav nav-tabs">
           <li class="nav-item">
@@ -86,14 +88,14 @@
             <a class="nav-link" href="entertainment.html">Entertainment</a>
           </li>
         </ul>
-        <div class="wd-event-banner">
+        <div class="position-relative">
           <img
             src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/2F8D58B5DF6215D6E0352AA210AC046732486F56D39EC7CBC20CC838DEB6EDC0/scale?width=1200&aspectRatio=1.78&format=jpeg"
             alt="Current event banner"
-            class="wd-event-img"
+            class="w-100"
           />
-          <div class="wd-event-text-overlay">
-            <span class="wd-event-title">The Race of the Century</span>
+          <div class="text-white position-absolute bottom-0">
+            <span class="h3 fw-bold">The Race of the Century</span>
           </div>
         </div>
         <ul class="list-group">
