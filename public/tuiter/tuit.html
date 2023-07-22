@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tuit</title>
+  </head>
+  <body>
+    <table>
+      <tbody>
+        <tr valign="top">
+          <td>
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="explore.html">Explore</a></li>
+              <li><a href="notifications.html">Notifications</a></li>
+              <li><a href="messages.html">Messages</a></li>
+              <li><a href="bookmarks.html">Bookmarks</a></li>
+              <li><a href="lists.html">Lists</a></li>
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="tuit.html">Tuit</a></li>
+              <li><a href="reply.html">Reply</a></li>
+            </ul>
+          </td>
+          <td width="100%">
+            <a href="navigation.html">Back</a>
+            <h1>Tuiter</h1>
+            <h2>Tuit</h2>
+            <img src="/logo192.png" alt="My profile picture" width="48px" height="48px" />
+            <br />
+            <textarea
+              name="tuit-create"
+              id="tuit-create"
+              placeholder="What's happening?"
+            ></textarea>
+            <br />
+            <select name="reply-perms" id="reply-perms">
+              <option value="EVERYONE" selected>Everyone can reply</option>
+              <option value="FOLLOWING">People you follow</option>
+              <option value="MENTIONED">Only people you mention</option>
+            </select>
+            <hr />
+            <input type="file" name="img-upload" id="img-upload" />
+            <button>Tuit</button>
+            <hr />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
