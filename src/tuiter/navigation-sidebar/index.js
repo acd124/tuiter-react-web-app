@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-// import from react icons: house hashtag bell envelope bookmark list user ellipsis
 import {
-  FaHouseUser,
+  FaHome,
   FaHashtag,
   FaBell,
   FaEnvelope,
@@ -17,7 +16,7 @@ const NavigationSidebar = () => {
   // eslint-disable-next-line no-unused-vars
   const [_ignore, _tuiter, active] = pathname.split('/');
   const links = [
-    { name: 'home', icon: FaHouseUser },
+    { name: 'home', icon: FaHome },
     { name: 'explore', icon: FaHashtag },
     { name: 'notifications', icon: FaBell },
     { name: 'messages', icon: FaEnvelope },
