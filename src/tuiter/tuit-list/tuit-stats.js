@@ -17,13 +17,8 @@ const TuitStats = ({ tuit }) => {
       <div className="col-3">
         <FaRetweet /> {tuit.retuits}
       </div>
-      <div className="col-3">
-        {tuit.liked ? (
-          <FaHeart color="red" onClick={toggleLikeHandler} />
-        ) : (
-          <FaRegHeart onClick={toggleLikeHandler} />
-        )}{' '}
-        {tuit.likes}
+      <div className="col-3" onClick={toggleLikeHandler}>
+        {tuit.liked ? <FaHeart color="red" /> : <FaRegHeart />} {tuit.likes}
       </div>
       <div className="col-3">
         <BsUpload />
