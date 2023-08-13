@@ -1,0 +1,44 @@
+[
+  {
+    "_id": 123,
+    "topic": "Space",
+    "userName": "SpaceX",
+    "title": "Tesla CyberTruck lands on Mars and picks up the Curiosity rover on its 6' bed",
+    "time": "2h",
+    "image": "spacex.ico",
+    "liked": false,
+    "replies": 323,
+    "retuits": 432,
+    "likes": 23435,
+    "handle": "@spacex",
+    "tuit": "This morning at 7:27 a.m. EST, Falcon 9 launched 60 Starlink satellites to orbit, completing SpaceX’s 10th Starlink mission. Falcon 9’s first stage previously supported Crew Dragon’s first demonstration mission to the International Space Station, launch of the RADARSAT Constellation Mission, and the fourth and seventh Starlink missions. Following stage separation, SpaceX landed Falcon 9’s first stage on the “Of Course I Still Love You” droneship, which was stationed in the Atlantic Ocean. One of Falcon 9’s fairing halves supported two previous Starlink launches."
+  },
+  {
+    "_id": 345,
+    "topic": "Energy",
+    "userName": "Tesla",
+    "title": "Tesla FSD finally makes driving obsolete. After years of delay, Tesla Full Self Driving can drive you to work while you work, play, or sleep",
+    "time": "4d",
+    "image": "tesla_invert.jpg",
+    "liked": true,
+    "replies": 123,
+    "retuits": 432,
+    "likes": 2345,
+    "handle": "@tesla",
+    "tuit": "Tesla is accelerating the world's transition to sustainable energy with electric cars, solar and integrated renewable energy solutions for homes and businesses."
+  },
+  {
+    "_id": 234,
+    "topic": "Space",
+    "userName": "SpaceX",
+    "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
+    "time": "2h",
+    "image": "spacex.ico",
+    "liked": true,
+    "replies": 13,
+    "retuits": 42,
+    "likes": 45,
+    "handle": "@spacex",
+    "tuit": "You want to wake up in the morning and think the future is going to be great - and that's what being a spacefaring civilization is all about. It's about believing in the future and thinking that the future will be better than the past. And I can't think of anything more exciting than going out there and being among the stars"
+  }
+]

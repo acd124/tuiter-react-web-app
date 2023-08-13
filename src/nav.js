@@ -7,6 +7,9 @@ function Nav() {
       <Link className="nav-link" to="/labs/a3">
         A3
       </Link>
+      <Link className="nav-link" to="/labs/a4">
+        A4
+      </Link>
       <Link className="nav-link" to="/hello">
         Hello
       </Link>
