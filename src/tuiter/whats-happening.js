@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { createTuit } from './reducers/tuits-reducer';
+import { createTuitThunk } from './services/tuits-thunks';
 import { useDispatch } from 'react-redux';
 import { AiOutlinePicture } from 'react-icons/ai';
 import { MdFormatListBulleted } from 'react-icons/md';
@@ -8,14 +8,34 @@ import { TbCalendarStats } from 'react-icons/tb';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
 import { BiBold, BiItalic } from 'react-icons/bi';
 
+const currentUser = {
+  username: 'NASA',
+  handle: '@nasa',
+  image: 'nasa.png',
+};
+
+const templateTuit = {
+  ...currentUser,
+  topic: 'Space',
+  time: '1h',
+  liked: false,
+  disliked: false,
+  replies: 0,
+  retuits: 0,
+  likes: 0,
+  dislikes: 0,
+};
+
 const WhatsHappening = () => {
   let [whatsHappening, setWhatsHappening] = useState('');
   const dispatch = useDispatch();
   const tuitClickHandler = () => {
     const newTuit = {
+      ...templateTuit,
+      title: whatsHappening.split(' ').slice(0, 5).join(' '),
       tuit: whatsHappening,
     };
-    dispatch(createTuit(newTuit));
+    dispatch(createTuitThunk(newTuit));
     setWhatsHappening('');
   };
   return (
