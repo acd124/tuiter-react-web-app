@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router';
-import { profileThunk, logoutThunk, updateUserThunk } from '../services/auth-thunks';
+import { logoutThunk, updateUserThunk } from '../services/auth-thunks';
 
 function ProfileScreen() {
   const { currentUser } = useSelector(state => state.user);
@@ -12,12 +12,13 @@ function ProfileScreen() {
     await dispatch(updateUserThunk(profile));
   };
   useEffect(() => {
-    const loadProfile = async () => {
-      const { payload } = await dispatch(profileThunk());
-      if (!payload) navigate('../login');
-      setProfile(payload);
-    };
-    loadProfile();
+    // const loadProfile = async () => {
+    //   const { payload } = await dispatch(profileThunk());
+    //   if (!payload) navigate('../login');
+    //   setProfile(payload);
+    // };
+    // loadProfile();
+    if (!profile) navigate('../login');
   }, []);
 
   return (
