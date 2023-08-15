@@ -1,20 +1,20 @@
-import React from 'react';
-const TuitSummaryItem = ({
-  tuit = {
-    topic: 'Space',
-    userName: 'SpaceX',
-    time: '2h',
-    title: `Tesla CyberTruck lands on Mars and
-               picks up the Curiosity rover on its 6' bed`,
-    image: 'tesla.png'
-  }
-}) => {
+import React, { useEffect } from 'react';
+import { timeDiff } from '../tuit-list/tuit-item';
+const TuitSummaryItem = ({ tuit }) => {
+  const [time, setTime] = React.useState(timeDiff(new Date(tuit.time)));
+  useEffect(() => {
+    const interval = setInterval(() => setTime(timeDiff(new Date(tuit.time))), 5000);
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
   return (
     <li className="list-group-item">
       <div className="row">
         <div className="col-10">
           <div>
-            {tuit.userName} . {tuit.time}
+            {tuit.userName} . {time}
           </div>
           <div className="fw-bolder">{tuit.topic}</div>
           <div>{tuit.title}</div>

@@ -10,7 +10,7 @@ import { HiOutlineX } from 'react-icons/hi';
  * @param {Date} time
  * @returns {string} time difference in words
  */
-const timeDiff = time => {
+export const timeDiff = time => {
   const timeDiffSecs = (Date.now() - time.getTime()) / 1000;
   if (timeDiffSecs < 60) {
     return `${Math.round(timeDiffSecs)}s`;
