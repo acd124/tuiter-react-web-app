@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Routes, Route, Navigate } from 'react-router';
+import { useDispatch } from 'react-redux';
 import Nav from '../nav';
 import NavigationSidebar from './navigation-sidebar';
 import HomeScreen from './home-screen';
@@ -17,11 +18,18 @@ import authReducer from './reducers/auth-reducer';
 import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
 import AuthContext from './auth-context';
+import { findTuitsThunk } from './services/tuits-thunks';
+
 const store = configureStore({
   reducer: { who: whoReducer, tuits: tuitsReducer, user: authReducer },
 });
 
 function Tuiter() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(findTuitsThunk());
+  }, []);
+
   return (
     <Provider store={store}>
       <AuthContext>
